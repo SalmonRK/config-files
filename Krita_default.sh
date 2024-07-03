@@ -38,7 +38,9 @@ CHECKPOINT_MODELS=(
 )
 
 LORA_MODELS=(
-    #"https://civitai.com/api/download/models/16576"
+    "https://civitai.com/api/download/models/16576"
+    "https://civitai.com/api/download/models/132876"
+    "https://civitai.com/api/download/models/135867"
     "https://huggingface.co/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sd15_lora.safetensors"
     "https://huggingface.co/salmonrk/Krita-models/resolve/main/lcm-lora-sdv1-5.safetensors"
     "https://huggingface.co/salmonrk/Krita-models/resolve/main/lcm-lora-sdxl.safetensors"
