@@ -35,7 +35,6 @@ CHECKPOINT_MODELS=(
     "https://huggingface.co/misri/zavychromaxl_v80/resolve/main/zavychromaxl_v80.safetensors"
     "https://huggingface.co/DucHaiten/pony-real/resolve/main/pony-real-beta-8.safetensors"
     "https://civitai.com/api/download/models/178039"
-    "https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/sd3_medium.safetensors"
 )
 
 LORA_MODELS=(
@@ -120,10 +119,6 @@ UPSCALE_MODELS=(
 
 TheMistoAI=("https://huggingface.co/TheMistoAI/MistoLine/resolve/main/Anyline/MTEED.pth")
 depth_anything=("https://huggingface.co/depth-anything/Depth-Anything-V2-Base/resolve/main/depth_anything_v2_vitb.pth")
-clip=(
-    "https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/text_encoders/clip_g.safetensors"
-    "https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/text_encoders/clip_l.safetensors"
-)
 ### DO NOT EDIT BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING ###
 
 function provisioning_start() {
@@ -182,9 +177,6 @@ function provisioning_start() {
     provisioning_get_models \
         "${WORKSPACE}/ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts/depth-anything/Depth-Anything-V2-Base" \
         "${depth_anything[@]}"
-    provisioning_get_models \
-        "${WORKSPACE}ComfyUI/models/clip" \
-        "${clip[@]}"
     
     #cd ${WORKSPACE}
     #wget https://github.com/Acly/krita-ai-diffusion/releases/download/v1.17.2/krita_ai_diffusion-1.17.2.zip
