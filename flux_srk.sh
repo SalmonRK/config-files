@@ -29,13 +29,13 @@ EXTENSIONS=(
 
 CHECKPOINT_MODELS=(
     #ColorfulAsianGirl Flux
-    "https://civitai.com/api/download/models/765642"
+    #"https://civitai.com/api/download/models/765642"
     #blue_pencil-flux1
-    "https://civitai.com/api/download/models/867256"
+    #"https://civitai.com/api/download/models/867256"
     #SDXL Wai-Realmix
     "https://civitai.com/api/download/models/868204"
     #SDXL Realdream
-    "https://civitai.com/api/download/models/832353"
+    #"https://civitai.com/api/download/models/832353"
     #RyuzakiMixRealistic
     "https://civitai.com/api/download/models/220771"
 
