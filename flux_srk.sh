@@ -7,7 +7,7 @@
 ### Edit the following arrays to suit your workflow - values must be quoted and separated by newlines or spaces.
 ### If you specify gated models you'll need to set environment variables HF_TOKEN and/orf CIVITAI_TOKEN
 
-DISK_GB_REQUIRED=40
+DISK_GB_REQUIRED=60
 
 APT_PACKAGES=(
     #"package-1"
@@ -20,7 +20,7 @@ PIP_PACKAGES=(
 
 EXTENSIONS=(
     "https://github.com/adieyal/sd-dynamic-prompts"
-    "https://github.com/ototadana/sd-face-editor"
+    #"https://github.com/ototadana/sd-face-editor"
     "https://github.com/AlUlkesh/stable-diffusion-webui-images-browser"
     "https://github.com/Coyote-A/ultimate-upscale-for-automatic1111"
     "https://github.com/Gourieff/sd-webui-reactor"
@@ -43,8 +43,14 @@ CHECKPOINT_MODELS=(
 
 LORA_MODELS=(
     #"https://civitai.com/api/download/models/16576"
+    #e-commerce
     "https://civitai.com/api/download/models/869845"
+    #Lego
     "https://civitai.com/api/download/models/856500"
+    #CRV
+    "https://huggingface.co/salmonrk/Flux-SalmonRK-Lora/resolve/main/flux_crvehev_v1_SalmonRK.safetensors"
+    #Moodeng
+    "https://huggingface.co/Gasia/gasiatest/resolve/main/flux_dev_pygmy_hippo.safetensors"
 )
 
 CLIP_MODELS=(
@@ -64,6 +70,7 @@ ESRGAN_MODELS=(
 
 CONTROLNET_MODELS=(
     "https://huggingface.co/salmonrk/Krita-models/resolve/main/controlnet-union-sdxl-promax.safetensors"
+    ""
 )
 
 
